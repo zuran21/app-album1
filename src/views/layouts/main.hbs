@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Photo</title>
+    <!-- boostrap 4 framework-->
+    <link rel="stylesheet" href="
+    https://bootswatch.com/5/lux/bootstrap.min.css">
+    <!--swiper-->
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css">
+</head>
+<body class="fondo-blur">
+    <!--Navegacion-->
+    
+{{> navigation}}
+<div class="container p-4">
+    {{{body}}}
+</div>
+<!--swiper scritps-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+</script>
+</body>
+</html>
