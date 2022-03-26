@@ -1,8 +1,8 @@
 const mongoose = require ('mongoose');
 
-//console.log(process.env.MONGODB_ASHVITU)
+//console.log(process.env.MONGODBlASHVITU)
 
-mongoose.connect(process.env.MONGODB_ASHVITU, {
+mongoose.connect(process.env.MONGODBlASHVITU, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 
