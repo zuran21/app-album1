@@ -2,7 +2,7 @@ const mongoose = require ('mongoose');
 
 //console.log(process.env.MONGODBlASHVITU)
 
-mongoose.connect(process.env.MONGODBlASHVITU, {
+mongoose.connect(process.env.MONGODBASHVITU, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 
